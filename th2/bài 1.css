@@ -1,0 +1,241 @@
+/* Import font Poppins */
+@import url('https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Khai báo biến cho mã màu */
+:root {
+  --primary-color: rgb(131, 213, 131);
+}
+
+/* Reset CSS, không sợ bị lỗi */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cài đặt cho body */
+body {
+  height: 100vh;
+  background: linear-gradient(to right, rgb(215, 93, 93), rgb(88, 156, 88));
+  font-family: "Poppins";
+}
+
+/* Cài đặt cho thẻ .card */
+.card {
+  margin: 120px auto;
+  width: 300px;
+  height: 400px;
+  background: rgb(94, 128, 128);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  position: relative;
+}
+
+/* Cài đặt cho thẻ .card_heart và .card_cart */
+.card_heart,
+.card_cart {
+  font-size: 25px;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  cursor: pointer;
+}
+
+/* Cài đặt cho .card_cart */
+.card_cart {
+  left: unset;
+  right: 20px;
+}
+
+/* Cài đặt cho thẻ .card_img */
+.card_img {
+  width: 90%;
+  transition: 0.5s;
+}
+
+/* Cài đặt cho ảnh trong thẻ .card_img */
+.card_img img {
+  width: 100%;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.card_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*ảnh to nhưng sẽ tự co vào*/
+}
+
+.card_title, .card_price {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.card_title {
+  color: var(--primary-color);
+}
+
+.card_size, .card_color {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card_size span {
+  padding: 1px 10px;
+  background: rgb(220, 211, 211);
+  color: black;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.card_color span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.card_color_green {
+  background: green;
+}
+
+.card_color_red {
+  background: red;
+}
+
+.card_color_yellow {
+  background: rgb(202, 232, 9);
+}
+
+.card_action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_action button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: var(--primary-color);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card_action button:hover {
+  background: var(--primary-color-dark);
+}
+
+.card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+}
+
+.card_img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card_title {
+  color: yellow;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 10px 0 10px;
+}
+
+.card_price {
+  color: white;
+  font-size: 16px;
+  margin: 0 10px 10px 10px;
+}
+
+.card_size, .card_color {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card_size span {
+  padding: 1px 10px;
+  background: rgb(220, 211, 211);
+  color: black;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.card_color span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.card_color_green {
+  background: green;
+}
+
+.card_color_red {
+  background: red;
+}
+
+.card_color_yellow {
+  background: rgb(202, 232, 9);
+}
+
+.card_action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_action button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: var(--primary-color);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card_action button:hover {
+  background: var(--primary-color-dark);
+}
